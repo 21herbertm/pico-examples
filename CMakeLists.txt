@@ -19,8 +19,10 @@ set(PICO_EXAMPLES_PATH ${PROJECT_SOURCE_DIR})
 pico_sdk_init()
 
 include(example_auto_set_url.cmake)
-# Add blink example
+
+# Modify this section for the blink example
 add_subdirectory(blink)
+# Inside blink/CMakeLists.txt, you'll add ltr303.c and target_include_directories
 
 # Add hello world example
 add_subdirectory(hello_world)
@@ -29,6 +31,7 @@ add_compile_options(-Wall
         -Wno-format          # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int
         -Wno-unused-function # we have some for the docs that aren't called
         )
+
 if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
     add_compile_options(-Wno-maybe-uninitialized)
 endif()
@@ -56,3 +59,4 @@ add_subdirectory(timer)
 add_subdirectory(uart)
 add_subdirectory(usb)
 add_subdirectory(watchdog)
+
