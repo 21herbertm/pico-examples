@@ -10,6 +10,8 @@ if (TARGET tinyusb_device)
             ltr303.h
             memorysaver.h
             HW_AVR_SPI_defines.h
+            cmsis_compiler.h
+            interrupt.h
             )
 
     # pull in common dependencies
