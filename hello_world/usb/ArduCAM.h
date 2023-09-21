@@ -641,6 +641,8 @@ struct sensor_reg {
 /****************************************************************/
 /* define a structure for sensor register initialization values */
 /****************************************************************/
+#include <stdint.h>
+#include "HW_AVR_SPI_defines.h"
 
 class ArduCAM 
 {
@@ -790,7 +792,7 @@ class ArduCAM
 #endif
 
 #if ( defined(OV5642_CAM) || defined(OV5642_MINI_5MP) || defined(OV5642_MINI_5MP_BIT_ROTATION_FIXED) || defined(OV5642_MINI_5MP_PLUS) )	
-	#include "ov5642_regs.h"
+	#include "/Users/mherbert/Desktop/FridgeVisionPico/pico-examples/hello_world/usb/ov5642_regs.h"
 #endif
 
 #if (defined(OV3640_CAM) || defined(OV3640_MINI_3MP))	

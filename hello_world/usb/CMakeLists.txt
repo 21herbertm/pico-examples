@@ -3,8 +3,13 @@ if (TARGET tinyusb_device)
             hello_usb.c
             ltr303.c
             ArduCAM.h
-            ov5640_regs.h
             pins_arduino.h
+            pgmspace.h
+            io.h
+            ov5642_regs.h
+            ltr303.h
+            memorysaver.h
+            HW_AVR_SPI_defines.h
             )
 
     # pull in common dependencies

@@ -25,9 +25,9 @@
 #include <string.h>
 #include <math.h>
 
-#include <avr/pgmspace.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
+#include "pgmspace.h"
+#include "io.h"
+#include "interrupt.h"
 #include <stdint.h>
 #include "binary.h"
 
