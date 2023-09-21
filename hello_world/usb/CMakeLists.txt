@@ -2,6 +2,9 @@ if (TARGET tinyusb_device)
     add_executable(hello_usb
             hello_usb.c
             ltr303.c
+            ArduCAM.h
+            ov5640_regs.h
+            pins_arduino.h
             )
 
     # pull in common dependencies
