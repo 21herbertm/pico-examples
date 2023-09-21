@@ -9,6 +9,8 @@
 #include "hardware/i2c.h"
 #include "ltr303.h"
 #include "OV5640_reg.h" // The header file for the OV5640 camera
+#include "oV5640.c"
+#include "ov5640cfg.h"
 
 #define LIGHT_THRESHOLD 15 // Define a threshold for light intensity
 
