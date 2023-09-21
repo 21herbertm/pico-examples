@@ -54,7 +54,7 @@ int main() {
     while (1) {
         // Read ambient light
         uint16_t ambient_light = ltr303_read_ambient_light(i2c);
-        printf("Ambient light: %d\n", ambient_light);
+        printf("Ambient light: \n", ambient_light);
 
         sleep_ms(1000);
     }
@@ -63,7 +63,8 @@ int main() {
 }
 
 
-/*
+ /*
+
 
 #include "pico/stdlib.h"
 #include "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h"
@@ -74,13 +75,13 @@ int main() {
 
 void uart_print(const char *str) {
     for (size_t i = 0; str[i] != '\0'; i++) {
-        uart_putc_raw(uart0, str[i]);
+        uart_putc_raw(uart1, str[i]);
     }
 }
 
 int main() {
     // Initialize UART
-    uart_init(uart0, 115200);
+    uart_init(uart1, 115200);
     gpio_set_function(0, GPIO_FUNC_UART);
     gpio_set_function(1, GPIO_FUNC_UART);
     gpio_pull_up(1);
