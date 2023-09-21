@@ -96,7 +96,7 @@
 #ifndef _AVR_IO_H_
 #define _AVR_IO_H_
 
-#include <avr/sfr_defs.h>
+#include "sfr_defs.h"
 
 #if defined (__AVR_AT94K__)
 #  include <avr/ioat94k.h>
@@ -542,20 +542,20 @@
 #  endif
 #endif
 
-#include <avr/portpins.h>
+#include "portpins.h"
 
-#include <avr/common.h>
+#include "common.h"
 
-#include <avr/version.h>
+#include "directfb_version.h"
 
 #if __AVR_ARCH__ >= 100
 #  include <avr/xmega.h>
 #endif
 
 /* Include fuse.h after individual IO header files. */
-#include <avr/fuse.h>
+#include "fuse.h"
 
 /* Include lock.h after individual IO header files. */
-#include <avr/lock.h>
+#include "lock.h"
 
 #endif /* _AVR_IO_H_ */

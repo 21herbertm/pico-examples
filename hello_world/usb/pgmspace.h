@@ -85,7 +85,7 @@
 #define __need_size_t
 #include <inttypes.h>
 #include <stddef.h>
-#include <avr/io.h>
+#include "io.h"
 
 #ifndef __ATTR_CONST__
 #define __ATTR_CONST__ __attribute__((__const__))

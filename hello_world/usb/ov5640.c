@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 #include <stdio.h>
-#include <devices.h>
+//#include <devices.h>
 #include <sys/unistd.h>
-#include "ov5640.h"
+#include "ov5640_reg.h"
 #include "dvp_camera.h"
 #include "ov5640af.h"
 #include "ov5640cfg.h"
