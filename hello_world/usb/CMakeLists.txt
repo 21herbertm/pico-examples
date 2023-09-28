@@ -2,16 +2,6 @@ if (TARGET tinyusb_device)
     add_executable(hello_usb
             hello_usb.c
             ltr303.c
-            ArduCAM.h
-            pins_arduino.h
-            pgmspace.h
-            io.h
-            ov5642_regs.h
-            ltr303.h
-            memorysaver.h
-            HW_AVR_SPI_defines.h
-            cmsis_compiler.h
-            interrupt.h
             )
 
     # pull in common dependencies
