@@ -1,8 +1,20 @@
 if (TARGET tinyusb_device)
     add_executable(hello_usb
+<<<<<<< Updated upstream
             ../../../pico-examples-a7fc6cc3561a88b668104baf0e8acc7baaf4f5f0/hello_world/usb/hello_usb9_28.c
             ../../../pico-examples-a7fc6cc3561a88b668104baf0e8acc7baaf4f5f0/hello_world/usb/ltr303.c
             )
+=======
+            hello_usb.c
+            ltr303.c
+            ArduCAM.h
+            ArduCAM.h
+            ArduCAM.cpp
+            ArduCAM.cpp
+            ov2640_regs.h
+            ov5642_regs.h
+    )
+>>>>>>> Stashed changes
 
     # pull in common dependencies
     target_link_libraries(hello_usb9_28 pico_stdlib hardware_i2c)

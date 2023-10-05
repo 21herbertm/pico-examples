@@ -8,6 +8,7 @@
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
 #include "ltr303.h"
+#include "ArduCAM.h"
 
 int main() {
     stdio_init_all();
