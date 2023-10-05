@@ -11,7 +11,7 @@
 #define LTR_303_H
 
 #include "pico/stdlib.h"
-#include "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h"
+#include "hardware/i2c.h"
 
 #define LTR303_I2C_ADDR 0x29
 
